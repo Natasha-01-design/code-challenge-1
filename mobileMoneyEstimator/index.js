@@ -13,4 +13,4 @@ console.log (`sending KES ${amountToSend}`)
 console.log (`Calculated Transaction Fee:${fee}`)
 console.log (`Total amount to be debited:KES ${TotalAmount}`)
 console.log (`/nSend Money Securely!`)
-}
+}npm init -y
