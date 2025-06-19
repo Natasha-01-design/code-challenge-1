@@ -13,12 +13,8 @@ function calculateBodaFare(distanceInKilometers) {
     console.log(`Total: KES${totalFare}`);
     console.log(`Panda Pikipiki`);
 }
-
-// Prompt user for distance in kilometers
-const UserInput = prompt("Unafika wapi Mkubwa? Kilometer ngapi?");
-const distanceInKilometers = parseInt(UserInput); // Convert input to integer
-
-// Validate user input
+const UserInput = prompt (Unafika wapi Mkubwa?Kilometer ngapi?
+    const distanceInKilometers = parseInt(UserInput);
 if (isNaN(distanceInKilometers) || distanceInKilometers <= 0) {
     console.log("Tafadhali weka umbali halali kwa kilomita."); // Invalid input message
 } else {

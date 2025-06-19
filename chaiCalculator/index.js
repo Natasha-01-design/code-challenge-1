@@ -1,8 +1,8 @@
-function (calculateChaiIngridients) {
+function calculateChaiIngridients(){
     const water = 200; // ml
     const milk = 50; // ml
-    const teaLeaves(Majani); 1 // tsp
-    const sugar(sukari) = 2; // tsp
+    const teaLeaves= 1 ;// tsp
+    const sugar = 2; // tsp
 
     const totalWater = numberOfCups * water;
     const totalMilk = numberOfCups * milk;

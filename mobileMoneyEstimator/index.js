@@ -1,3 +1,4 @@
+
 // Function to estimate the transaction fee for sending money
 function estimateTransactionFee(amountToSend) {
     // Convert the input to a number in case it's a string
@@ -24,4 +25,20 @@ function estimateTransactionFee(amountToSend) {
     console.log(`Calculated Transaction Fee: ${fee}`);
     console.log(`Total amount to be debited: KES ${TotalAmount}`);
     console.log(`\nSend Money Securely!`);
+}
+
+let input;
+if (typeof prompt === "function") {
+    input = prompt("unatuma ngapi? (KES):");
+    estimateTransactionFee(input);
+} else {
+    // Node.js fallback: read from command line
+    const readline = require('readline').createInterface({
+        input: process.stdin,
+        output: process.stdout
+    });
+    readline.question("unatuma ngapi? (KES): ", (answer) => {
+        estimateTransactionFee(answer);
+        readline.close();
+    });
 }
